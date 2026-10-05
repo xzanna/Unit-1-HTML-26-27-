@@ -4,28 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Containers and Identity</title>
+    <style>
+        .highlight {background-color: aqua;}
+        #site-footer{color: blue;}
+        #main-nav{background-color: bisque;}
+        .card{border: 2px solid #94A3B8;
+        border-radius: 8px;}
+        .price{color: chartreuse;
+        font-weight: 900;}
+    </style>
 </head>
 <body>
-    <style>
-        .highlight {
-            background-color: aqua;
-        }
-        #site-footer{color: blue;}
-    </style>
+    <nav id="main-nav">...nav links...</nav>
+    
     <p class="highlight">First Note</p>
     <p class="highlight">Second Note</p>
     <p class="highlight">Third Note</p>
+    <p>a plain note-no class, no color</p>
 
     <!-- (div.card>h2+p)*2 -->
-<div class="card">
-    <h2>Product A</h2>
-    <p>First Product</p>
-</div>
-<div class="card">
-    <h2>Product B</h2>
-    <p>Second Product</p>
-</div>
+    <div class="highlight">
+       <h2>Product A</h2>
+        <p>First Product</p>
+    </div>
+    <div class="card">
+        <h2>Product B</h2>
+        <p>Second Product</p>
+    </div>
 
+    <p>The price is <span class="price">$29</span> 
+        today only!</p>
+    
     <footer id="site-footer">
         @ 2026 CLUB SIGN-UP
     </footer>
